@@ -1,0 +1,1278 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://jstreemap.com/
+Subject: 
+Date: Sun, 12 Nov 2023 10:06:24 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--H5pdlk4haX4XPzoKnTS8vRv6UkVjFil3dwOima7lX3----"
+
+
+------MultipartBoundary--H5pdlk4haX4XPzoKnTS8vRv6UkVjFil3dwOima7lX3----
+Content-Type: text/html
+Content-ID: <frame-3A9F3E4EE485F5E20E50911DCA9EBA66@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://jstreemap.com/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-8ebe2657-4038-4b69-a1b3-331bee20b41f@mhtml.blink" />
+       =20
+        <meta name=3D"description" value=3D"Open source jQuery/HTML5 canvas=
+ treemapping plugin with open architecture allowing complete customization =
+of look and feel and treemap event handling.">
+        <link rel=3D"stylesheet" type=3D"text/css" href=3D"http://ajax.goog=
+leapis.com/ajax/libs/jqueryui/1.10.2/themes/ui-lightness/jquery-ui.css" med=
+ia=3D"screen">
+       =20
+       =20
+       =20
+       =20
+       =20
+    </head>
+    <body>
+        <div id=3D"content">=20
+            <div id=3D"header"></div>
+            <div id=3D"bodyContent">
+                <div id=3D"example1">
+                  <h3>HTML5 Javascript treemap</h3>
+                    <h4>Description</h4>
+                    <p>Utilizing the jQuery widget factory and HTML5 canvas=
+ this Javascript treemap widget presents hierarchical data using the squari=
+fied treemap layout algorithm described in "<a href=3D"http://www.win.tue.n=
+l/~vanwijk/stm.pdf">Squarified Treemaps</a>", by Mark Bruls, Kees Huizing a=
+nd Jarke J. van Wijk.</p> =20
+                    <p>The jQuery treemap widget code and this page's HTML,=
+ CSS and Javascript are available from <a href=3D"https://github.com/evanca=
+rey/jsTreemap">https://github.com/evancarey/jsTreemap</a>. Stable tagged ve=
+rsions of the source can also be obtained via the jQuery plugin registry <a=
+ href=3D"http://plugins.jquery.com/treemap/">http://plugins.jquery.com/tree=
+map/</a>.  Development and testing has primarily been limited to current ve=
+rsions of Chrome, Safari and FF.  Please send issues, ideas and (even bette=
+r) fixes to me via GitHub.</p>
+                    <h4>Example</h4>
+                    <p>The following example treemap of random data demonst=
+rates the creation, destruction and dynamic update of some of the treemap p=
+lugin options.  Using the buttons below, create and destroy the treemap.  C=
+lick the other buttons to update the treemap plugin's dimensions, color gra=
+dient and the gradient applied to the treemap's leaf nodes.</p>
+                    <input id=3D"t8" type=3D"button" value=3D"destroy">
+                    <input id=3D"t1" type=3D"button" value=3D"create">
+                    <input id=3D"t2" type=3D"button" value=3D"900x200">
+                    <input id=3D"t3" type=3D"button" value=3D"900x600">
+                    <input id=3D"t4" type=3D"button" value=3D"color1">
+                    <input id=3D"t5" type=3D"button" value=3D"color2">
+                    <input id=3D"t6" type=3D"button" value=3D"gradient1">
+                    <input id=3D"t7" type=3D"button" value=3D"gradient2">
+                    <input id=3D"t9" type=3D"checkbox" checked=3D"checked">
+                    <label for=3D"t9">labels</label>
+                    <div><span id=3D"treemap"><canvas width=3D"900" height=
+=3D"300"></canvas></span></div>
+                    <div id=3D"sizeByOptions">
+                    <div class=3D"sizeByOptionLabel">Size By:</div>
+                    <div class=3D"sizeByOption" id=3D"sizeBy0">size opt 1</=
+div>
+                    <div class=3D"sizeByOption" id=3D"sizeBy1" style=3D"bac=
+kground-color: rgb(221, 221, 221);">size opt 2</div>
+                    <div class=3D"sizeByOption" id=3D"sizeBy2">size opt 3</=
+div>
+                    <div class=3D"sizeByOption" id=3D"sizeBy3">size opt 4</=
+div>
+                    </div>
+                    <div id=3D"debug-info"><span><p>0,0</p></span></div>
+                    <div id=3D"highlighter"></div>
+                    <div id=3D"mouseoverbox" class=3D"mouseoverbox"></div>
+                    <h4>Features</h4>
+                    <ul>
+                      <li>Pure Javascript - no embedded objects and browser=
+ plugins required.</li>
+                      <li>Open architecture - easily change look and feel w=
+ith your own gradient and labeller code.</li>
+                      <li>Unbalanced Graphs OK - graph being treemapped can=
+ have branches of different depth.</li>
+                      <li>Node highlighting, mouseover boxes and menus can =
+be implemented as treemap event handlers in Javascript!</li>
+                      <li>Size and color updates are simple plugin options.=
+</li>
+                      <li>Treemap graph and presentation data are separate.=
+</li>
+                    </ul>
+                    <h4>Options</h4>
+                        <h5>dimensions</h5>
+                        <p>An array of two elements the first being the wid=
+th and the second is the height (in pixels) of the canvas element used to r=
+ender the treemap.  Example: set the width to 600 pixels and height to 400 =
+pixels.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    dimensions: [600,400]</pre></div>
+                        <h5>nodeData</h5>
+                        <p>A data structure containing the nodes to be pres=
+ented in the treemap.  Each node has the members: "id", "size", and "color"=
+.  Internal nodes have the additional member "children".  Root node does no=
+t require the members "size" or "color".  If present they are ignored.
+                        </p><ul>
+                            <li>"id" is a unique identifier for the node.  =
+Identifier can be used in treemap event handlers to perform lookup into nod=
+e detail data.</li>
+                            <li>"size" is an array of float values in the r=
+ange [0,1] that can be used to size a node.  Size values are relative value=
+s that represent what fraction of the parent's area the child node should o=
+ccupy.  The element used to size the node is dependent on the value of the =
+option "sizeOption".</li>
+                            <li>"color" is an array of float values in the =
+range [0,1) that are used to compute an index into the treemap's color grad=
+ient.  The element used to color the node is dependent on the value of the =
+option "colorOption".</li>
+                            <li>"children" is an array of child nodes.</li>
+                        </ul>
+                        Example:
+                        <p></p>
+    <div class=3D"codeDiv"><pre>    nodeData: {
+        "id":"2fc414e2",=20
+        "children":[
+            {
+                "id":"23f627dc",=20
+                "size":[0.25,0.349],=20
+                "color":[0.39,0.54],=20
+                "children":[
+                    {
+                        "id":"ce96d31f",=20
+                        "size":[0.25,0.64],=20
+                        "color":[0.74,0.10]
+                    },
+                    {
+                        "id":"91e0ea1d",=20
+                        "size":[0.25,0.15],=20
+                        "color":[0.98,0.78]
+                    },
+                    {
+                        "id":"62188591",=20
+                        "size":[0.16667,0.32],=20
+                        "color":[0.39,0.48]
+                    },
+                    ...
+                ]
+            },
+            ...
+        ]
+    }</pre></div>
+                        <h5>sizeOption</h5>
+                        <p>An index into a node's size array used to specif=
+y which size value to apply to the node.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    sizeOption: 0</pre></div>
+                        <h5>colorOption</h5>
+                        <p>An index into a node's color array used to speci=
+fy which color value to apply to the node.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    colorOption: 0</pre></div>
+                        <h5>colorStops</h5>
+                        <p>An array of colors and values used to create a o=
+ne pixel wide linear color gradient of length determined by option "colorRe=
+solution".  The linear color gradient is used as color lookup table by calc=
+ulating indexes into the linear gradient derived from the colorResoltion an=
+d each node's current color value.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    colorStops : [
+        {"val":0,"color":"#08f"},
+        {"val":0.5,"color":"#03f"},
+        {"val":1,"color":"#005"}
+    ]</pre></div>
+                        <h5>colorResolution</h5>
+                        <p>An integer value which is used as the length of =
+the treemap's linear color gradient.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    colorResolution: 1024</pre></div>
+                        <h5>naColor</h5>
+                        <p>A hex color value used for nodes with null value=
+s for the current colorOption.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    naColor: "#000"</pre></div>
+                        <h5>layoutMethod</h5>
+                        <p>A function that returns an array of rectangles r=
+epresenting the computed geometry derived from a containing rectangle and a=
+n array of (normalized) area values.  The function must accept 2 arguments =
+such that the first argument is the containing rectangle and the second arg=
+ument is an array of area values.</p>
+                        <ul>
+                            <li>"rect" is the containing rectangle with x, =
+y, width, height.  ex: [0, 0, 600, 400]</li>
+                            <li>"vals" is an array of normalized area value=
+s to be treemapped.  The sum of the values should equal 1.0.  ex: [0.5, 0.2=
+5, 0.25]</li>
+                        </ul>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    layoutMethod: TreemapUtils.squarify</pr=
+e></div>
+                        <h5>innerNodeHeaderGradient</h5>
+                        <p>A function that returns a gradient object used a=
+s the fillStyle of inner node header rectangles.  The function must accept =
+3 arguments: "ctx", "rect", and "rgb".
+                        </p><ul>
+                            <li>"ctx" is the 2d drawing context of the tree=
+map's canvas element.</li>
+                            <li>"rect" is a node's header rectangle generat=
+ed by treemap layout algorithm.</li>
+                            <li>"rgb" is a node's color value obtained by t=
+reemap's lookup into its current color gradient.</li>
+                        </ul>
+                        <p></p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    innerNodeHeaderGradient: function(ctx,r=
+ect,rgb) {
+        var gradient =3D ctx.createLinearGradient(rect[0],rect[1],rect[0],r=
+ect[1]+rect[3]);
+        gradient.addColorStop(0.,"#ccc");
+        gradient.addColorStop(.4,"#fff");
+        gradient.addColorStop(.6,"#fff");
+        gradient.addColorStop(1.,"#777");
+        return gradient;
+    }</pre></div>
+                        <h5>leafNodeBodyGradient</h5>
+                        <p>A function that returns a gradient object used a=
+s the fillStyle of leaf node body rectangles.  The function must accept 3 a=
+rguments: "ctx", "rect" and "rgb".
+                        </p><ul>
+                            <li>"ctx" is the 2d drawing context of the tree=
+map's canvas element.</li>
+                            <li>"rect" is a node's rectangle generated by t=
+reemap layout algorithm.</li>
+                            <li>"rgb" is a node's color value obtained by t=
+reemap's lookup into its current color gradient.</li>
+                        </ul>
+                        <p></p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    leafNodeBodyGradient: function(ctx,rect=
+,rgb) {
+        var r1 =3D Math.min(rect[2],rect[3])*0.1;
+        var r2 =3D Math.max(rect[2],rect[3]);
+        var x =3D rect[0]+rect[2]*0.5;
+        var y =3D rect[1]+rect[3]*0.5;
+        var gradient =3D ctx.createRadialGradient(x,y,r1,x,y,r2);
+        gradient.addColorStop(0,TreemapUtils.lighterColor(TreemapUtils.rgb2=
+hex(rgb),0.2));
+        gradient.addColorStop(1,TreemapUtils.darkerColor(TreemapUtils.rgb2h=
+ex(rgb),0.2));
+        return gradient;
+    }</pre></div>
+                        <h5>innerNodeHeaderLabeller</h5>
+                        <p>A function that renders text into inner node hea=
+der rectangles.  The function must accept 4 arguments: "ctx", "rect", "rgb"=
+ and "id".
+                        </p><ul>
+                            <li>"ctx" is the 2d drawing context of the tree=
+map's canvas element.</li>
+                            <li>"rect" is a node's header rectangle generat=
+ed by treemap layout algorithm.</li>
+                            <li>"rgb" is a node's color value obtained by t=
+reemap's lookup into its current color gradient.</li>
+                            <li>"id" is the node's unique identifier.</li>
+                        </ul>
+                        <p></p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    innerNodeHeaderLabeller: function(ctx,r=
+ect,rgb,id) {
+        ctx.rect(rect[0],rect[1],rect[2],rect[3]);
+        ctx.clip();
+        ctx.fillStyle =3D '#555';
+        ctx.font =3D '0.625em Verdana, Geneva, sans-serif';
+        ctx.fillText(id,rect[0],rect[1]+10);
+    }</pre></div>
+                        <h5>leafNodeBodyLabeller</h5>
+                        <p>A function that renders text into leaf node body=
+ rectangles.  The function must accept 4 arguments: "ctx", "rect", "rgb" an=
+d "id".
+                        </p><ul>
+                            <li>"ctx" is the 2d drawing context of the tree=
+map's canvas element.</li>
+                            <li>"rect" is a node's body rectangle generated=
+ by treemap layout algorithm.</li>
+                            <li>"rgb" is a node's color value obtained by t=
+reemap's lookup into its current color gradient.</li>
+                            <li>"id" is the node's unique identifier.</li>
+                        </ul>
+                        <p></p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    leafNodeBodyLabeller: function(ctx,rect=
+,rgb,id) {
+        ctx.rect(rect[0],rect[1],rect[2],rect[3]);
+        ctx.clip();
+        if (TreemapUtils.avgRgb(rgb) &lt;=3D 200) {
+            ctx.fillStyle =3D '#fff';
+        } else {
+            ctx.fillStyle =3D '#888';
+        }
+        ctx.font =3D '0.625em Verdana, Geneva, sans-serif';
+        ctx.fillText(id,rect[0],rect[1]+10);
+    }</pre></div>
+                        <h5>nodeBorderWidth</h5>
+                        <p>Number of pixels to use as spacing around intern=
+al nodes.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    nodeBorderWidth: 0</pre></div>
+                        <h5>labelsEnabled</h5>
+                        <p>Boolean used to enable or disable node labelling=
+.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    labelsEnabled: true</pre></div>
+                        <h5>animationEnabled</h5>
+                        <p>Boolean flag indicating whether or not to animat=
+e size option changes.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    animationEnabled: false</pre></div>
+                        <h5>animationDurationMs</h5>
+                        <p>Millisecond duration of size transition animatio=
+n.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    animationDurationMs: 1000</pre></div>
+                        <h5>animationEasing</h5>
+                        <p>Object containing input parameters to a Bezier c=
+urve function.  Resultant curve is used to compute percent completion of an=
+imation.</p>
+    <p>Default:</p>
+    <div class=3D"codeDiv"><pre>    animationEasing: {} // linear easing</p=
+re></div>
+    <p>Example:</p>
+    <div class=3D"codeDiv"><pre>    animationEasing: {mX1 : 0.42, mY1 : 0.0=
+, mX2 : 0.58, mY2 : 1.0} // ease-in-out</pre></div>
+    <p>Easing convenience object:</p>
+    <div class=3D"codeDiv"><pre>    TreemapUtils.Easing =3D {
+        "ease":        {mX1 : 0.25, mY1 : 0.1, mX2 : 0.25, mY2 : 1.0},=20
+        "linear":      {mX1 : 0.00, mY1 : 0.0, mX2 : 1.00, mY2 : 1.0},
+        "ease-in":     {mX1 : 0.42, mY1 : 0.0, mX2 : 1.00, mY2 : 1.0},
+        "ease-out":    {mX1 : 0.00, mY1 : 0.0, mX2 : 0.58, mY2 : 1.0},
+        "ease-in-out": {mX1 : 0.42, mY1 : 0.0, mX2 : 0.58, mY2 : 1.0}
+    };</pre></div>
+    <p>Easing convenience object members can be applied like so:</p>
+    <div class=3D"codeDiv"><pre>    $("#treemap").treemap({
+        ...
+        "animationEasing":TreemapUtils.Easing["ease-in-out"],
+        ...
+    });
+    </pre></div>
+                    <h4>Events</h4>
+                    <h5>treemapmousemove</h5>
+                    <p>The treemapmousemove event can be used to trigger an=
+d update the presentation of a mouseover box and node highlighter(s) via a =
+Javascript callback.  The mouseover box and highlighter(s) shown in this ex=
+ample are optional presentation elements and can be populated, styled using=
+ HTML and CSS.  The sample javascript code in this page demonstrates what i=
+nformation is available to the event handlers and how one might choose to h=
+ighlight and/or display node details.</p>
+                    <h5>treemapclick</h5>
+                    <p>The treemapclick event can be used to trigger dynami=
+c updates to the page's presentation via a Javascript callback.  The sample=
+ javascript code in this page demonstrates what information is available to=
+ the event handler.</p>
+                    <h4>Examples</h4>
+                    <ul>
+                        <li><a href=3D"http://jstreemap.com/01-example.html=
+">01-example.html</a> - treemap of small data set using defaulted options</=
+li>
+                        <li><a href=3D"http://jstreemap.com/02-example.html=
+">02-example.html</a> - adding size and color controls</li>
+                    </ul>
+                </div>
+            </div>
+            <div id=3D"footer">
+                <div>
+                    <p>The jQuery treemap widget code and this page's HTML,=
+ CSS and Javascript are available from <a href=3D"https://github.com/evanca=
+rey/jsTreemap">https://github.com/evancarey/jsTreemap</a></p>
+                </div>
+            </div>
+            <div style=3D"display:none"><p>s3</p></div>
+        </div>
+	   =20
+   =20
+
+
+</body></html>
+------MultipartBoundary--H5pdlk4haX4XPzoKnTS8vRv6UkVjFil3dwOima7lX3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8ebe2657-4038-4b69-a1b3-331bee20b41f@mhtml.blink
+
+@charset "utf-8";
+
+body { font: 0.75em Verdana, Geneva, sans-serif; }
+
+.sizeByOptionLabel { display: inline-block; color: rgb(170, 170, 170); }
+
+.sizeByOption { display: inline-block; border: 1px solid rgb(204, 204, 204)=
+; padding: 0px 10px; margin: 0px; color: rgb(102, 102, 102); }
+
+#content { margin-right: auto; margin-left: auto; width: 900px; }
+
+canvas { border: 1px solid rgb(255, 0, 0); }
+
+#treemap { display: inline-block; }
+
+.highlighter { border: 1px solid rgb(255, 255, 0); position: absolute; disp=
+lay: none; pointer-events: none; }
+
+.mouseoverbox { border: 1px solid rgb(170, 170, 170); position: absolute; b=
+ackground-color: rgb(255, 255, 255); pointer-events: none; display: none; }
+
+.mouseoverbox p { margin: 0px 2px; padding: 0px 2px; font-size: 0.8em; colo=
+r: rgb(68, 68, 68); }
+
+.codeDiv { border: 1px solid rgb(170, 170, 170); }
+------MultipartBoundary--H5pdlk4haX4XPzoKnTS8vRv6UkVjFil3dwOima7lX3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/ui-lightness/jquery-ui.css
+
+@charset "utf-8";
+
+.ui-helper-hidden { display: none; }
+
+.ui-helper-hidden-accessible { border: 0px; clip: rect(0px, 0px, 0px, 0px);=
+ height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absol=
+ute; width: 1px; }
+
+.ui-helper-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; li=
+ne-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; disp=
+lay: table; border-collapse: collapse; }
+
+.ui-helper-clearfix::after { clear: both; }
+
+.ui-helper-clearfix { min-height: 0px; }
+
+.ui-helper-zfix { width: 100%; height: 100%; top: 0px; left: 0px; position:=
+ absolute; opacity: 0; }
+
+.ui-front { z-index: 100; }
+
+.ui-state-disabled { cursor: default !important; }
+
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; backgro=
+und-repeat: no-repeat; }
+
+.ui-widget-overlay { position: fixed; top: 0px; left: 0px; width: 100%; hei=
+ght: 100%; }
+
+.ui-accordion .ui-accordion-header { display: block; cursor: pointer; posit=
+ion: relative; margin-top: 2px; padding: 0.5em 0.5em 0.5em 0.7em; min-heigh=
+t: 0px; }
+
+.ui-accordion .ui-accordion-icons { padding-left: 2.2em; }
+
+.ui-accordion .ui-accordion-noicons { padding-left: 0.7em; }
+
+.ui-accordion .ui-accordion-icons .ui-accordion-icons { padding-left: 2.2em=
+; }
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon { position: ab=
+solute; left: 0.5em; top: 50%; margin-top: -8px; }
+
+.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0px; =
+overflow: auto; }
+
+.ui-autocomplete { position: absolute; top: 0px; left: 0px; cursor: default=
+; }
+
+.ui-button { display: inline-block; position: relative; padding: 0px; line-=
+height: normal; margin-right: 0.1em; cursor: pointer; vertical-align: middl=
+e; text-align: center; overflow: visible; }
+
+.ui-button, .ui-button:link, .ui-button:visited, .ui-button:hover, .ui-butt=
+on:active { text-decoration: none; }
+
+.ui-button-icon-only { width: 2.2em; }
+
+button.ui-button-icon-only { width: 2.4em; }
+
+.ui-button-icons-only { width: 3.4em; }
+
+button.ui-button-icons-only { width: 3.7em; }
+
+.ui-button .ui-button-text { display: block; line-height: normal; }
+
+.ui-button-text-only .ui-button-text { padding: 0.4em 1em; }
+
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text=
+ { padding: 0.4em; text-indent: -1e+07px; }
+
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-but=
+ton-text { padding: 0.4em 1em 0.4em 2.1em; }
+
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-b=
+utton-text { padding: 0.4em 2.1em 0.4em 1em; }
+
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right:=
+ 2.1em; }
+
+input.ui-button { padding: 0.4em 1em; }
+
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-b=
+utton-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-but=
+ton-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons=
+ .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { l=
+eft: 0.5em; }
+
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-i=
+cons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secon=
+dary { right: 0.5em; }
+
+.ui-buttonset { margin-right: 7px; }
+
+.ui-buttonset .ui-button { margin-left: 0px; margin-right: -0.3em; }
+
+.ui-datepicker { width: 17em; padding: 0.2em 0.2em 0px; display: none; }
+
+.ui-datepicker .ui-datepicker-header { position: relative; padding: 0.2em 0=
+px; }
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { po=
+sition: absolute; top: 2px; width: 1.8em; height: 1.8em; }
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-nex=
+t-hover { top: 1px; }
+
+.ui-datepicker .ui-datepicker-prev { left: 2px; }
+
+.ui-datepicker .ui-datepicker-next { right: 2px; }
+
+.ui-datepicker .ui-datepicker-prev-hover { left: 1px; }
+
+.ui-datepicker .ui-datepicker-next-hover { right: 1px; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next=
+ span { display: block; position: absolute; left: 50%; margin-left: -8px; t=
+op: 50%; margin-top: -8px; }
+
+.ui-datepicker .ui-datepicker-title { margin: 0px 2.3em; line-height: 1.8em=
+; text-align: center; }
+
+.ui-datepicker .ui-datepicker-title select { font-size: 1em; margin: 1px 0p=
+x; }
+
+.ui-datepicker select.ui-datepicker-month-year { width: 100%; }
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepic=
+ker-year { width: 49%; }
+
+.ui-datepicker table { width: 100%; font-size: 0.9em; border-collapse: coll=
+apse; margin: 0px 0px 0.4em; }
+
+.ui-datepicker th { padding: 0.7em 0.3em; text-align: center; font-weight: =
+bold; border: 0px; }
+
+.ui-datepicker td { border: 0px; padding: 1px; }
+
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: 0.2e=
+m; text-align: right; text-decoration: none; }
+
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: =
+0.7em 0px 0px; padding: 0px 0.2em; border-left: 0px; border-right: 0px; bor=
+der-bottom: 0px; }
+
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: 0.5=
+em 0.2em 0.4em; cursor: pointer; padding: 0.2em 0.6em 0.3em; width: auto; o=
+verflow: visible; }
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { flo=
+at: left; }
+
+.ui-datepicker.ui-datepicker-multi { width: auto; }
+
+.ui-datepicker-multi .ui-datepicker-group { float: left; }
+
+.ui-datepicker-multi .ui-datepicker-group table { width: 95%; margin: 0px a=
+uto 0.4em; }
+
+.ui-datepicker-multi-2 .ui-datepicker-group { width: 50%; }
+
+.ui-datepicker-multi-3 .ui-datepicker-group { width: 33.3%; }
+
+.ui-datepicker-multi-4 .ui-datepicker-group { width: 25%; }
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .ui-d=
+atepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-=
+left-width: 0px; }
+
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear: left; }
+
+.ui-datepicker-row-break { clear: both; width: 100%; font-size: 0px; }
+
+.ui-datepicker-rtl { direction: rtl; }
+
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear: right; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current, =
+.ui-datepicker-rtl .ui-datepicker-group { float: right; }
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-dat=
+epicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-righ=
+t-width: 0px; border-left-width: 1px; }
+
+.ui-dialog { position: absolute; top: 0px; left: 0px; padding: 0.2em; outli=
+ne: 0px; }
+
+.ui-dialog .ui-dialog-titlebar { padding: 0.4em 1em; position: relative; }
+
+.ui-dialog .ui-dialog-title { float: left; margin: 0.1em 0px; white-space: =
+nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; }
+
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 0.3em; to=
+p: 50%; width: 21px; margin: -10px 0px 0px; padding: 1px; height: 20px; }
+
+.ui-dialog .ui-dialog-content { position: relative; border: 0px; padding: 0=
+.5em 1em; background: none; overflow: auto; }
+
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0px =
+0px; background-image: none; margin-top: 0.5em; padding: 0.3em 1em 0.5em 0.=
+4em; }
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+
+.ui-dialog .ui-dialog-buttonpane button { margin: 0.5em 0.4em 0.5em 0px; cu=
+rsor: pointer; }
+
+.ui-dialog .ui-resizable-se { width: 12px; height: 12px; right: -5px; botto=
+m: -5px; background-position: 16px 16px; }
+
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+.ui-menu { list-style: none; padding: 2px; margin: 0px; display: block; out=
+line: none; }
+
+.ui-menu .ui-menu { margin-top: -3px; position: absolute; }
+
+.ui-menu .ui-menu-item { margin: 0px; padding: 0px; width: 100%; }
+
+.ui-menu .ui-menu-divider { margin: 5px -2px; height: 0px; font-size: 0px; =
+line-height: 0; border-width: 1px 0px 0px; }
+
+.ui-menu .ui-menu-item a { text-decoration: none; display: block; padding: =
+2px 0.4em; line-height: 1.5; min-height: 0px; font-weight: normal; }
+
+.ui-menu .ui-menu-item a.ui-state-focus, .ui-menu .ui-menu-item a.ui-state-=
+active { font-weight: normal; margin: -1px; }
+
+.ui-menu .ui-state-disabled { font-weight: normal; margin: 0.4em 0px 0.2em;=
+ line-height: 1.5; }
+
+.ui-menu .ui-state-disabled a { cursor: default; }
+
+.ui-menu-icons { position: relative; }
+
+.ui-menu-icons .ui-menu-item a { position: relative; padding-left: 2em; }
+
+.ui-menu .ui-icon { position: absolute; top: 0.2em; left: 0.2em; }
+
+.ui-menu .ui-menu-icon { position: static; float: right; }
+
+.ui-progressbar { height: 2em; text-align: left; overflow: hidden; }
+
+.ui-progressbar .ui-progressbar-value { margin: -1px; height: 100%; }
+
+.ui-progressbar .ui-progressbar-overlay { background: url("images/animated-=
+overlay.gif"); height: 100%; opacity: 0.25; }
+
+.ui-progressbar-indeterminate .ui-progressbar-value { background-image: non=
+e; }
+
+.ui-resizable { position: relative; }
+
+.ui-resizable-handle { position: absolute; font-size: 0.1px; display: block=
+; }
+
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-res=
+izable-handle { display: none; }
+
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; le=
+ft: 0px; }
+
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px;=
+ left: 0px; }
+
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; heig=
+ht: 100%; }
+
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; heigh=
+t: 100%; }
+
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px=
+; bottom: 1px; }
+
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; =
+bottom: -5px; }
+
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; =
+top: -5px; }
+
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px;=
+ top: -5px; }
+
+.ui-selectable-helper { position: absolute; z-index: 100; border: 1px dotte=
+d black; }
+
+.ui-slider { position: relative; text-align: left; }
+
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em=
+; height: 1.2em; cursor: default; }
+
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: 0.=
+7em; display: block; border: 0px; background-position: 0px 0px; }
+
+.ui-slider.ui-state-disabled .ui-slider-handle, .ui-slider.ui-state-disable=
+d .ui-slider-range { filter: inherit; }
+
+.ui-slider-horizontal { height: 0.8em; }
+
+.ui-slider-horizontal .ui-slider-handle { top: -0.3em; margin-left: -0.6em;=
+ }
+
+.ui-slider-horizontal .ui-slider-range { top: 0px; height: 100%; }
+
+.ui-slider-horizontal .ui-slider-range-min { left: 0px; }
+
+.ui-slider-horizontal .ui-slider-range-max { right: 0px; }
+
+.ui-slider-vertical { width: 0.8em; height: 100px; }
+
+.ui-slider-vertical .ui-slider-handle { left: -0.3em; margin-left: 0px; mar=
+gin-bottom: -0.6em; }
+
+.ui-slider-vertical .ui-slider-range { left: 0px; width: 100%; }
+
+.ui-slider-vertical .ui-slider-range-min { bottom: 0px; }
+
+.ui-slider-vertical .ui-slider-range-max { top: 0px; }
+
+.ui-spinner { position: relative; display: inline-block; overflow: hidden; =
+padding: 0px; vertical-align: middle; }
+
+.ui-spinner-input { border: none; background: none; color: inherit; padding=
+: 0px; margin: 0.2em 22px 0.2em 0.4em; vertical-align: middle; }
+
+.ui-spinner-button { width: 16px; height: 50%; font-size: 0.5em; padding: 0=
+px; margin: 0px; text-align: center; position: absolute; cursor: default; d=
+isplay: block; overflow: hidden; right: 0px; }
+
+.ui-spinner a.ui-spinner-button { border-top: none; border-bottom: none; bo=
+rder-right: none; }
+
+.ui-spinner .ui-icon { position: absolute; margin-top: -8px; top: 50%; left=
+: 0px; }
+
+.ui-spinner-up { top: 0px; }
+
+.ui-spinner-down { bottom: 0px; }
+
+.ui-spinner .ui-icon-triangle-1-s { background-position: -65px -16px; }
+
+.ui-tabs { position: relative; padding: 0.2em; }
+
+.ui-tabs .ui-tabs-nav { margin: 0px; padding: 0.2em 0.2em 0px; }
+
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relativ=
+e; top: 0px; margin: 1px 0.2em 0px 0px; border-bottom-width: 0px; padding: =
+0px; white-space: nowrap; }
+
+.ui-tabs .ui-tabs-nav li a { float: left; padding: 0.5em 1em; text-decorati=
+on: none; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active { margin-bottom: -1px; padding-bott=
+om: 1px; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-stat=
+e-disabled a, .ui-tabs .ui-tabs-nav li.ui-tabs-loading a { cursor: text; }
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-ac=
+tive a { cursor: pointer; }
+
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0px; padding: 1em 1=
+.4em; background: none; }
+
+.ui-tooltip { padding: 8px; position: absolute; z-index: 9999; max-width: 3=
+00px; box-shadow: rgb(170, 170, 170) 0px 0px 5px; }
+
+body .ui-tooltip { border-width: 2px; }
+
+.ui-widget { font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-seri=
+f; font-size: 1.1em; }
+
+.ui-widget .ui-widget { font-size: 1em; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button=
+ { font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif; font-si=
+ze: 1em; }
+
+.ui-widget-content { border: 1px solid rgb(221, 221, 221); background: url(=
+"images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x rgb(23=
+8, 238, 238); color: rgb(51, 51, 51); }
+
+.ui-widget-content a { color: rgb(51, 51, 51); }
+
+.ui-widget-header { border: 1px solid rgb(231, 143, 8); background: url("im=
+ages/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x rgb(246, 168=
+, 40); color: rgb(255, 255, 255); font-weight: bold; }
+
+.ui-widget-header a { color: rgb(255, 255, 255); }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header =
+.ui-state-default { border: 1px solid rgb(204, 204, 204); background: url("=
+images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x rgb(246, 246, 24=
+6); font-weight: bold; color: rgb(28, 148, 196); }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited =
+{ color: rgb(28, 148, 196); text-decoration: none; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-=
+state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widge=
+t-header .ui-state-focus { border: 1px solid rgb(251, 203, 9); background: =
+url("images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x rgb(253, 24=
+5, 206); font-weight: bold; color: rgb(199, 116, 5); }
+
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-sta=
+te-hover a:visited { color: rgb(199, 116, 5); text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u=
+i-state-active { border: 1px solid rgb(251, 216, 80); background: url("imag=
+es/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x rgb(255, 255, 255); f=
+ont-weight: bold; color: rgb(235, 143, 0); }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { c=
+olor: rgb(235, 143, 0); text-decoration: none; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-hea=
+der .ui-state-highlight { border: 1px solid rgb(254, 210, 47); background: =
+url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x rgb=
+(255, 228, 92); color: rgb(54, 54, 54); }
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget=
+-header .ui-state-highlight a { color: rgb(54, 54, 54); }
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-=
+state-error { border: 1px solid rgb(205, 10, 10); background: url("images/u=
+i-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat rgb(184, 25, 0); =
+color: rgb(255, 255, 255); }
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header =
+.ui-state-error a { color: rgb(255, 255, 255); }
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-h=
+eader .ui-state-error-text { color: rgb(255, 255, 255); }
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-h=
+eader .ui-priority-primary { font-weight: bold; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widg=
+et-header .ui-priority-secondary { opacity: 0.7; font-weight: normal; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-heade=
+r .ui-state-disabled { opacity: 0.35; background-image: none; }
+
+.ui-state-disabled .ui-icon { }
+
+.ui-icon { width: 16px; height: 16px; }
+
+.ui-icon, .ui-widget-content .ui-icon { background-image: url("images/ui-ic=
+ons_222222_256x240.png"); }
+
+.ui-widget-header .ui-icon { background-image: url("images/ui-icons_ffffff_=
+256x240.png"); }
+
+.ui-state-default .ui-icon { background-image: url("images/ui-icons_ef8c08_=
+256x240.png"); }
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon { background-image: url(=
+"images/ui-icons_ef8c08_256x240.png"); }
+
+.ui-state-active .ui-icon { background-image: url("images/ui-icons_ef8c08_2=
+56x240.png"); }
+
+.ui-state-highlight .ui-icon { background-image: url("images/ui-icons_228ef=
+1_256x240.png"); }
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon { background-image:=
+ url("images/ui-icons_ffd27a_256x240.png"); }
+
+.ui-icon-blank { background-position: 16px 16px; }
+
+.ui-icon-carat-1-n { background-position: 0px 0px; }
+
+.ui-icon-carat-1-ne { background-position: -16px 0px; }
+
+.ui-icon-carat-1-e { background-position: -32px 0px; }
+
+.ui-icon-carat-1-se { background-position: -48px 0px; }
+
+.ui-icon-carat-1-s { background-position: -64px 0px; }
+
+.ui-icon-carat-1-sw { background-position: -80px 0px; }
+
+.ui-icon-carat-1-w { background-position: -96px 0px; }
+
+.ui-icon-carat-1-nw { background-position: -112px 0px; }
+
+.ui-icon-carat-2-n-s { background-position: -128px 0px; }
+
+.ui-icon-carat-2-e-w { background-position: -144px 0px; }
+
+.ui-icon-triangle-1-n { background-position: 0px -16px; }
+
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+
+.ui-icon-arrow-1-n { background-position: 0px -32px; }
+
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+
+.ui-icon-arrowthick-1-n { background-position: 0px -48px; }
+
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+
+.ui-icon-arrowreturnthick-1-w { background-position: 0px -64px; }
+
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+
+.ui-icon-arrow-4 { background-position: 0px -80px; }
+
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+
+.ui-icon-extlink { background-position: -32px -80px; }
+
+.ui-icon-newwin { background-position: -48px -80px; }
+
+.ui-icon-refresh { background-position: -64px -80px; }
+
+.ui-icon-shuffle { background-position: -80px -80px; }
+
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+
+.ui-icon-folder-collapsed { background-position: 0px -96px; }
+
+.ui-icon-folder-open { background-position: -16px -96px; }
+
+.ui-icon-document { background-position: -32px -96px; }
+
+.ui-icon-document-b { background-position: -48px -96px; }
+
+.ui-icon-note { background-position: -64px -96px; }
+
+.ui-icon-mail-closed { background-position: -80px -96px; }
+
+.ui-icon-mail-open { background-position: -96px -96px; }
+
+.ui-icon-suitcase { background-position: -112px -96px; }
+
+.ui-icon-comment { background-position: -128px -96px; }
+
+.ui-icon-person { background-position: -144px -96px; }
+
+.ui-icon-print { background-position: -160px -96px; }
+
+.ui-icon-trash { background-position: -176px -96px; }
+
+.ui-icon-locked { background-position: -192px -96px; }
+
+.ui-icon-unlocked { background-position: -208px -96px; }
+
+.ui-icon-bookmark { background-position: -224px -96px; }
+
+.ui-icon-tag { background-position: -240px -96px; }
+
+.ui-icon-home { background-position: 0px -112px; }
+
+.ui-icon-flag { background-position: -16px -112px; }
+
+.ui-icon-calendar { background-position: -32px -112px; }
+
+.ui-icon-cart { background-position: -48px -112px; }
+
+.ui-icon-pencil { background-position: -64px -112px; }
+
+.ui-icon-clock { background-position: -80px -112px; }
+
+.ui-icon-disk { background-position: -96px -112px; }
+
+.ui-icon-calculator { background-position: -112px -112px; }
+
+.ui-icon-zoomin { background-position: -128px -112px; }
+
+.ui-icon-zoomout { background-position: -144px -112px; }
+
+.ui-icon-search { background-position: -160px -112px; }
+
+.ui-icon-wrench { background-position: -176px -112px; }
+
+.ui-icon-gear { background-position: -192px -112px; }
+
+.ui-icon-heart { background-position: -208px -112px; }
+
+.ui-icon-star { background-position: -224px -112px; }
+
+.ui-icon-link { background-position: -240px -112px; }
+
+.ui-icon-cancel { background-position: 0px -128px; }
+
+.ui-icon-plus { background-position: -16px -128px; }
+
+.ui-icon-plusthick { background-position: -32px -128px; }
+
+.ui-icon-minus { background-position: -48px -128px; }
+
+.ui-icon-minusthick { background-position: -64px -128px; }
+
+.ui-icon-close { background-position: -80px -128px; }
+
+.ui-icon-closethick { background-position: -96px -128px; }
+
+.ui-icon-key { background-position: -112px -128px; }
+
+.ui-icon-lightbulb { background-position: -128px -128px; }
+
+.ui-icon-scissors { background-position: -144px -128px; }
+
+.ui-icon-clipboard { background-position: -160px -128px; }
+
+.ui-icon-copy { background-position: -176px -128px; }
+
+.ui-icon-contact { background-position: -192px -128px; }
+
+.ui-icon-image { background-position: -208px -128px; }
+
+.ui-icon-video { background-position: -224px -128px; }
+
+.ui-icon-script { background-position: -240px -128px; }
+
+.ui-icon-alert { background-position: 0px -144px; }
+
+.ui-icon-info { background-position: -16px -144px; }
+
+.ui-icon-notice { background-position: -32px -144px; }
+
+.ui-icon-help { background-position: -48px -144px; }
+
+.ui-icon-check { background-position: -64px -144px; }
+
+.ui-icon-bullet { background-position: -80px -144px; }
+
+.ui-icon-radio-on { background-position: -96px -144px; }
+
+.ui-icon-radio-off { background-position: -112px -144px; }
+
+.ui-icon-pin-w { background-position: -128px -144px; }
+
+.ui-icon-pin-s { background-position: -144px -144px; }
+
+.ui-icon-play { background-position: 0px -160px; }
+
+.ui-icon-pause { background-position: -16px -160px; }
+
+.ui-icon-seek-next { background-position: -32px -160px; }
+
+.ui-icon-seek-prev { background-position: -48px -160px; }
+
+.ui-icon-seek-end { background-position: -64px -160px; }
+
+.ui-icon-seek-start { background-position: -80px -160px; }
+
+.ui-icon-seek-first { background-position: -80px -160px; }
+
+.ui-icon-stop { background-position: -96px -160px; }
+
+.ui-icon-eject { background-position: -112px -160px; }
+
+.ui-icon-volume-off { background-position: -128px -160px; }
+
+.ui-icon-volume-on { background-position: -144px -160px; }
+
+.ui-icon-power { background-position: 0px -176px; }
+
+.ui-icon-signal-diag { background-position: -16px -176px; }
+
+.ui-icon-signal { background-position: -32px -176px; }
+
+.ui-icon-battery-0 { background-position: -48px -176px; }
+
+.ui-icon-battery-1 { background-position: -64px -176px; }
+
+.ui-icon-battery-2 { background-position: -80px -176px; }
+
+.ui-icon-battery-3 { background-position: -96px -176px; }
+
+.ui-icon-circle-plus { background-position: 0px -192px; }
+
+.ui-icon-circle-minus { background-position: -16px -192px; }
+
+.ui-icon-circle-close { background-position: -32px -192px; }
+
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+
+.ui-icon-circle-check { background-position: -208px -192px; }
+
+.ui-icon-circlesmall-plus { background-position: 0px -208px; }
+
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+
+.ui-icon-grip-dotted-vertical { background-position: 0px -224px; }
+
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { border-top=
+-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { border-to=
+p-right-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { border-=
+bottom-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { border=
+-bottom-right-radius: 4px; }
+
+.ui-widget-overlay { background: url("images/ui-bg_diagonals-thick_20_66666=
+6_40x40.png") 50% 50% repeat rgb(102, 102, 102); opacity: 0.5; }
+
+.ui-widget-shadow { margin: -5px 0px 0px -5px; padding: 5px; background: ur=
+l("images/ui-bg_flat_10_000000_40x100.png") 50% 50% repeat-x rgb(0, 0, 0); =
+opacity: 0.2; border-radius: 5px; }
+------MultipartBoundary--H5pdlk4haX4XPzoKnTS8vRv6UkVjFil3dwOima7lX3------

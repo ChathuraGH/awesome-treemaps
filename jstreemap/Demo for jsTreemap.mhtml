@@ -1,0 +1,55 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.jqueryscript.net/demo/jQuery-Treemap-Plugin-for-Hierarchical-Data-jsTreemap/
+Subject: Demo for jsTreemap
+Date: Sun, 12 Nov 2023 10:10:22 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--jIIxmtjZbZmni5yG6GGvCCR6zlchHyvSELYymdTIQ8----"
+
+
+------MultipartBoundary--jIIxmtjZbZmni5yG6GGvCCR6zlchHyvSELYymdTIQ8----
+Content-Type: text/html
+Content-ID: <frame-DE49256051DAA0260CC516FBE9D96011@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.jqueryscript.net/demo/jQuery-Treemap-Plugin-for-Hierarchical-Data-jsTreemap/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+
+
+
+
+<link href=3D"https://www.jqueryscript.net/css/top.css" rel=3D"stylesheet" =
+type=3D"text/css">
+<title>Demo for jsTreemap</title>
+</head>
+<body>
+<div id=3D"menu">
+<div class=3D"w">
+<a href=3D"https://www.jqueryscript.net/layout/jQuery-Treemap-Plugin-for-Hi=
+erarchical-Data-jsTreemap.html">Download</a> - <a href=3D"https://www.jquer=
+yscript.net/">Back To jQueryScript.Net</a></div>
+</div>
+<h1 style=3D"margin-top:100px;">Demo for jsTreemap</h1>
+<div id=3D"treemap"><canvas width=3D"600" height=3D"400"></canvas></div>
+
+       =20
+
+
+
+</body></html>
+------MultipartBoundary--jIIxmtjZbZmni5yG6GGvCCR6zlchHyvSELYymdTIQ8----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.jqueryscript.net/css/top.css
+
+@charset "utf-8";
+
+#menu { position: fixed; height: 60px; width: 100%; top: 0px; left: 0px; bo=
+rder-top: 5px solid rgb(161, 203, 47); background: rgb(255, 255, 255); box-=
+shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px 0px; z-index: 999999; line-height: =
+60px; }
+
+.w { width: 900px; margin: 0px auto 40px; }
+------MultipartBoundary--jIIxmtjZbZmni5yG6GGvCCR6zlchHyvSELYymdTIQ8------

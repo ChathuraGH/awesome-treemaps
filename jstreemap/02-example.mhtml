@@ -1,0 +1,113 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://jstreemap.com/02-example.html
+Subject: 
+Date: Sun, 12 Nov 2023 10:07:01 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--oeiLo2vTU9YRe9c6xKtRlCbVOFrCogTp1RMzZhv677----"
+
+
+------MultipartBoundary--oeiLo2vTU9YRe9c6xKtRlCbVOFrCogTp1RMzZhv677----
+Content-Type: text/html
+Content-ID: <frame-5BF66043D951FDF20F306B27C28E2829@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://jstreemap.com/02-example.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-e785c95d-a712-47c4-ab13-b7962fd176a4@mhtml.blink" />
+        <link rel=3D"stylesheet" type=3D"text/css" href=3D"http://yui.yahoo=
+apis.com/3.9.1/build/cssreset/cssreset-min.css">
+       =20
+       =20
+       =20
+       =20
+       =20
+    </head>
+    <body>
+        <div id=3D"treemap"><canvas width=3D"844" height=3D"301"></canvas><=
+/div>
+        <div id=3D"sizeColorByOptions">
+            <div class=3D"sizeByOptionLabel">Size By:</div>
+            <div class=3D"sizeByOption" id=3D"sizeBy0">size opt 1</div>
+            <div class=3D"sizeByOption" id=3D"sizeBy1" style=3D"background-=
+color:#ddd">size opt 2</div>
+            <div class=3D"sizeByOption" id=3D"sizeBy2">size opt 3</div>
+            <div class=3D"sizeByOption" id=3D"sizeBy3">size opt 4</div>
+            <div class=3D"colorByOptionLabel" style=3D"padding-left:30px">C=
+olor By:</div>
+            <div class=3D"colorByOption" id=3D"colorBy0">color opt 1</div>
+            <div class=3D"colorByOption" id=3D"colorBy1" style=3D"backgroun=
+d-color:#ddd">color opt 2</div>
+            <div class=3D"colorByOption" id=3D"colorBy2">color opt 3</div>
+            <div class=3D"colorByOption" id=3D"colorBy3">color opt 4</div>
+        </div>
+        <div id=3D"debug-info" style=3D"display:inline-block"><span><p>469,=
+ 202; id =3D 11fa3b9d</p></span></div>
+       =20
+   =20
+
+
+</body></html>
+------MultipartBoundary--oeiLo2vTU9YRe9c6xKtRlCbVOFrCogTp1RMzZhv677----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-e785c95d-a712-47c4-ab13-b7962fd176a4@mhtml.blink
+
+@charset "utf-8";
+
+body { font: 0.75em Verdana, Geneva, sans-serif; }
+
+.sizeByOptionLabel { display: inline-block; color: rgb(170, 170, 170); }
+
+.sizeByOption { display: inline-block; border: 1px solid rgb(204, 204, 204)=
+; padding: 0px 10px; margin: 0px; color: rgb(102, 102, 102); }
+
+.colorByOptionLabel { display: inline-block; color: rgb(170, 170, 170); }
+
+.colorByOption { display: inline-block; border: 1px solid rgb(204, 204, 204=
+); padding: 0px 10px; margin: 0px; color: rgb(102, 102, 102); }
+------MultipartBoundary--oeiLo2vTU9YRe9c6xKtRlCbVOFrCogTp1RMzZhv677----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://yui.yahooapis.com/3.9.1/build/cssreset/cssreset-min.css
+
+@charset "utf-8";
+
+html { color: rgb(0, 0, 0); background: rgb(255, 255, 255); }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form,=
+ fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0px; pa=
+dding: 0px; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+fieldset, img { border: 0px; }
+
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal=
+; font-weight: normal; }
+
+ol, ul { list-style: none; }
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+q::before, q::after { content: ""; }
+
+abbr, acronym { border: 0px; font-variant: normal; }
+
+sup { vertical-align: text-top; }
+
+sub { vertical-align: text-bottom; }
+
+input, textarea, select { font-family: inherit; font-size: inherit; font-we=
+ight: inherit; }
+
+input, textarea, select { }
+
+legend { color: rgb(0, 0, 0); }
+
+#yui3-css-stamp.cssreset { display: none; }
+------MultipartBoundary--oeiLo2vTU9YRe9c6xKtRlCbVOFrCogTp1RMzZhv677------

@@ -1,0 +1,141 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.jqueryscript.net/demo/jQuery-Plugin-For-Tree-Map-View-of-JSON-Data-Tree-Map/
+Subject: jQuery Tree Map Example
+Date: Sun, 12 Nov 2023 10:11:27 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--T3aRTMbJfSBHNjGHT6bufhRmZ8EcM0A98acJ42txRu----"
+
+
+------MultipartBoundary--T3aRTMbJfSBHNjGHT6bufhRmZ8EcM0A98acJ42txRu----
+Content-Type: text/html
+Content-ID: <frame-A04D33B30CDDD5310FD9C167075C530D@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.jqueryscript.net/demo/jQuery-Plugin-For-Tree-Map-View-of-JSON-Data-Tree-Map/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-718b7564-48f0-4dc9-94f2-9f26cb465178@mhtml.blink" />
+
+<title>jQuery Tree Map Example</title>
+<link href=3D"https://www.jqueryscript.net/css/jquerysctipttop.css" rel=3D"=
+stylesheet" type=3D"text/css">
+
+</head>
+<body style=3D"">
+<div id=3D"jquery-script-menu">
+<div class=3D"jquery-script-center">
+<ul>
+<li><a href=3D"https://www.jqueryscript.net/layout/jQuery-Plugin-For-Tree-M=
+ap-View-of-JSON-Data-Tree-Map.html">Download This Plugin</a></li>
+<li><a href=3D"https://www.jqueryscript.net/">Back To jQueryScript.Net</a><=
+/li>
+</ul>
+<div class=3D"jquery-script-ads">
+</div>
+<div class=3D"jquery-script-clear"></div>
+</div>
+</div>
+<h1 style=3D"margin-top:150px;">jQuery Tree Map Example</h1>
+<div id=3D"my-treemap" style=3D"display: block; position: relative;"><div i=
+d=3D"treemap-node-0" class=3D"treemap-node major" style=3D"top: 0px; left: =
+0px; width: 248px; height: 598px; position: absolute;"><div class=3D"treema=
+p-label" style=3D"display: block; position: relative; text-align: center; f=
+ont-size: 24px; margin-top: 285px;">Label 1</div></div><div id=3D"treemap-n=
+ode-1" class=3D"treemap-node major" style=3D"top: 0px; left: 250px; width: =
+548px; height: 189px; position: absolute;"><div class=3D"treemap-label" sty=
+le=3D"display: block; position: relative; text-align: center; font-size: 24=
+px; margin-top: 80.5px;">Label 2</div></div><div id=3D"treemap-node-2" clas=
+s=3D"treemap-node major" style=3D"top: 191px; left: 250px; width: 255px; he=
+ight: 407px; position: absolute;"><div class=3D"treemap-label" style=3D"dis=
+play: block; position: relative; text-align: center; font-size: 24px; margi=
+n-top: 189.5px;">Label 5</div></div><div id=3D"treemap-node-3" class=3D"tre=
+emap-node minor" style=3D"top: 191px; left: 507px; width: 291px; height: 25=
+4px; position: absolute;"><div class=3D"treemap-label" style=3D"display: bl=
+ock; position: relative; text-align: center; font-size: 24px; margin-top: 1=
+13px;">Label 3</div></div><div id=3D"treemap-node-4" class=3D"treemap-node =
+minor" style=3D"top: 447px; left: 507px; width: 291px; height: 151px; posit=
+ion: absolute;"><div class=3D"treemap-label" style=3D"display: block; posit=
+ion: relative; text-align: center; font-size: 24px; margin-top: 61.5px;">La=
+bel 4</div></div></div>
+<div id=3D"data-box"><p>Label: Label 1</p><p>Data:label 1 data</p><p>Value:=
+100</p></div>
+=20
+=20
+
+   =20
+
+
+</body></html>
+------MultipartBoundary--T3aRTMbJfSBHNjGHT6bufhRmZ8EcM0A98acJ42txRu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-718b7564-48f0-4dc9-94f2-9f26cb465178@mhtml.blink
+
+@charset "utf-8";
+
+#my-treemap { float: left; width: 800px; height: 600px; font-family: Arial;=
+ font-size: 11px; }
+
+#data-box { float: left; width: 200px; height: 100px; border: 1px solid rgb=
+(153, 153, 153); padding: 15px; font-family: Arial; color: rgb(51, 51, 51);=
+ font-size: 14px; }
+
+.minor { background-color: red; color: white; }
+
+.major { background-color: green; color: white; }
+------MultipartBoundary--T3aRTMbJfSBHNjGHT6bufhRmZ8EcM0A98acJ42txRu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.jqueryscript.net/css/jquerysctipttop.css
+
+@charset "utf-8";
+
+#jquery-script-menu { position: absolute; height: 90px; width: 100%; top: 0=
+px; left: 0px; border-top: 5px solid rgb(49, 101, 148); background: rgb(255=
+, 255, 255); box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px 0px; z-index: 9999=
+99; padding: 10px 0px; box-sizing: content-box; }
+
+.jquery-script-center { max-width: 960px; margin: 0px auto; }
+
+.jquery-script-center ul { width: 212px; float: left; line-height: 45px; ma=
+rgin: 0px; padding: 0px; list-style: none; }
+
+.jquery-script-center a { text-decoration: none; }
+
+.jquery-script-ads { max-width: 728px; height: 90px; float: right; }
+
+.jquery-script-clear { clear: both; height: 0px; }
+
+#carbonads { display: block; overflow: hidden; max-width: 728px; position: =
+relative; font-size: 22px; box-sizing: content-box; }
+
+#carbonads > span { display: block; }
+
+#carbonads a { color: rgb(64, 120, 192); text-decoration: none; }
+
+#carbonads a:hover { color: rgb(54, 100, 163); }
+
+.carbon-wrap { display: flex; align-items: center; }
+
+.carbon-img { display: block; margin: 0px; line-height: 1; }
+
+.carbon-img img { display: block; height: 90px; width: auto; }
+
+.carbon-text { display: block; padding: 0px 1em; line-height: 1.35; text-al=
+ign: left; }
+
+.carbon-poweredby { display: block; position: absolute; bottom: 0px; right:=
+ 0px; padding: 6px 10px; text-align: center; text-transform: uppercase; let=
+ter-spacing: 0.5px; font-weight: 600; font-size: 8px; border-top-left-radiu=
+s: 4px; line-height: 1; color: rgb(170, 170, 170) !important; }
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+  .carbon-text { font-size: 14px; }
+}
+
+@media only screen and (max-width: 1023px) {
+  .jquery-script-ads { display: none; }
+}
+------MultipartBoundary--T3aRTMbJfSBHNjGHT6bufhRmZ8EcM0A98acJ42txRu------

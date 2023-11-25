@@ -1,0 +1,133 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.jqueryscript.net/demo/jQuery-Plugin-To-Generate-Simple-Treemap-Diagrams-Treemap-js/
+Subject: jQuery Treemap.js Plugin Demo
+Date: Sun, 12 Nov 2023 10:12:18 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--9A0mg9AUmdVQBLv0BsOjhdvvaeMoVYWvvl7rykHQRA----"
+
+
+------MultipartBoundary--9A0mg9AUmdVQBLv0BsOjhdvvaeMoVYWvvl7rykHQRA----
+Content-Type: text/html
+Content-ID: <frame-C58BB908B11F46690345A062B50BFCA3@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.jqueryscript.net/demo/jQuery-Plugin-To-Generate-Simple-Treemap-Diagrams-Treemap-js/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge,chrome=3D1">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+	    <title>jQuery Treemap.js Plugin Demo</title>
+        <link href=3D"https://www.jqueryscript.net/css/jquerysctipttop.css"=
+ rel=3D"stylesheet" type=3D"text/css">
+	</head>
+	<body><div id=3D"jquery-script-menu">
+<div class=3D"jquery-script-center">
+<ul>
+<li><a href=3D"https://www.jqueryscript.net/chart-graph/jQuery-Plugin-To-Ge=
+nerate-Simple-Treemap-Diagrams-Treemap-js.html">Download This Plugin</a></l=
+i>
+<li><a href=3D"https://www.jqueryscript.net/">Back To jQueryScript.Net</a><=
+/li>
+</ul>
+<div class=3D"jquery-script-ads">
+</div>
+<div class=3D"jquery-script-clear"></div>
+</div>
+</div>
+    <h1 style=3D"margin:150px auto 30px auto; text-align:center;">jQuery Tr=
+eemap.js Plugin Demo</h1>
+		<div class=3D"js-test" style=3D"width: 500px; height: 500px; position: re=
+lative; margin: 0px auto; border-width: 0px;"><div class=3D"treemap-node" s=
+tyle=3D"border: 0px solid rgb(0, 0, 0); position: absolute; background-colo=
+r: rgb(113, 175, 216); top: 0px; left: 0px; height: 266.667px; width: 357.1=
+43px;"><div class=3D"treemap-node" style=3D"border: 1px solid rgb(0, 0, 0);=
+ position: absolute; background-color: rgb(251, 246, 177); top: 0px; left: =
+0px; height: 266.828px; width: 289.923px;"></div><div class=3D"treemap-node=
+" style=3D"border: 1px solid rgb(0, 0, 0); position: absolute; background-c=
+olor: rgb(218, 201, 243); top: 0px; left: 289.923px; height: 266.828px; wid=
+th: 66.9052px;"></div></div><div class=3D"treemap-node" style=3D"border: 1p=
+x solid rgb(0, 0, 0); position: absolute; background-color: rgb(197, 241, 1=
+59); top: 266.667px; left: 0px; height: 233.333px; width: 357.143px;"></div=
+><div class=3D"treemap-node" style=3D"border: 0px solid rgb(0, 0, 0); posit=
+ion: absolute; background-color: rgb(252, 204, 145); top: 0px; left: 357.14=
+3px; height: 361.111px; width: 142.857px;"><div class=3D"treemap-node" styl=
+e=3D"border: 1px solid rgb(0, 0, 0); position: absolute; background-color: =
+rgb(171, 211, 238); top: 0px; left: 0px; height: 120.276px; width: 142.828p=
+x;"></div><div class=3D"treemap-node" style=3D"border: 1px solid rgb(0, 0, =
+0); position: absolute; background-color: rgb(255, 199, 3); top: 120.276px;=
+ left: 0px; height: 115.047px; width: 142.828px;"></div><div class=3D"treem=
+ap-node" style=3D"border: 1px solid rgb(0, 0, 0); position: absolute; backg=
+round-color: rgb(121, 92, 164); top: 235.323px; left: 0px; height: 125.505p=
+x; width: 77.3651px;"></div><div class=3D"treemap-node" style=3D"border: 1p=
+x solid rgb(0, 0, 0); position: absolute; background-color: rgb(232, 145, 3=
+8); top: 235.323px; left: 77.3651px; height: 91.2766px; width: 65.4628px;">=
+</div><div class=3D"treemap-node" style=3D"border: 1px solid rgb(0, 0, 0); =
+position: absolute; background-color: rgb(116, 171, 69); top: 326.599px; le=
+ft: 77.3651px; height: 34.2287px; width: 65.4628px;"></div></div><div class=
+=3D"treemap-node" style=3D"border: 1px solid rgb(0, 0, 0); position: absolu=
+te; background-color: rgb(52, 112, 151); top: 361.111px; left: 357.143px; h=
+eight: 138.889px; width: 142.857px;"></div></div>
+	=09
+	=09
+
+	=09
+=09
+</body></html>
+------MultipartBoundary--9A0mg9AUmdVQBLv0BsOjhdvvaeMoVYWvvl7rykHQRA----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.jqueryscript.net/css/jquerysctipttop.css
+
+@charset "utf-8";
+
+#jquery-script-menu { position: absolute; height: 90px; width: 100%; top: 0=
+px; left: 0px; border-top: 5px solid rgb(49, 101, 148); background: rgb(255=
+, 255, 255); box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px 0px; z-index: 9999=
+99; padding: 10px 0px; box-sizing: content-box; }
+
+.jquery-script-center { max-width: 960px; margin: 0px auto; }
+
+.jquery-script-center ul { width: 212px; float: left; line-height: 45px; ma=
+rgin: 0px; padding: 0px; list-style: none; }
+
+.jquery-script-center a { text-decoration: none; }
+
+.jquery-script-ads { max-width: 728px; height: 90px; float: right; }
+
+.jquery-script-clear { clear: both; height: 0px; }
+
+#carbonads { display: block; overflow: hidden; max-width: 728px; position: =
+relative; font-size: 22px; box-sizing: content-box; }
+
+#carbonads > span { display: block; }
+
+#carbonads a { color: rgb(64, 120, 192); text-decoration: none; }
+
+#carbonads a:hover { color: rgb(54, 100, 163); }
+
+.carbon-wrap { display: flex; align-items: center; }
+
+.carbon-img { display: block; margin: 0px; line-height: 1; }
+
+.carbon-img img { display: block; height: 90px; width: auto; }
+
+.carbon-text { display: block; padding: 0px 1em; line-height: 1.35; text-al=
+ign: left; }
+
+.carbon-poweredby { display: block; position: absolute; bottom: 0px; right:=
+ 0px; padding: 6px 10px; text-align: center; text-transform: uppercase; let=
+ter-spacing: 0.5px; font-weight: 600; font-size: 8px; border-top-left-radiu=
+s: 4px; line-height: 1; color: rgb(170, 170, 170) !important; }
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+  .carbon-text { font-size: 14px; }
+}
+
+@media only screen and (max-width: 1023px) {
+  .jquery-script-ads { display: none; }
+}
+------MultipartBoundary--9A0mg9AUmdVQBLv0BsOjhdvvaeMoVYWvvl7rykHQRA------
